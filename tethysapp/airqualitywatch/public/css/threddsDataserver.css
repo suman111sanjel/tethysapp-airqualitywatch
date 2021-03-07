@@ -1,0 +1,494 @@
+/*range start*/
+input[type=range].thredds-range {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 6px 0;
+}
+
+input[type=range].thredds-range:focus {
+    outline: none;
+}
+
+input[type=range].thredds-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #ffffff;
+    border-radius: 0px;
+    border: 0.1px solid #a5a5a5;
+}
+
+input[type=range].thredds-range::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px solid #a5a5a5;
+    height: 22px;
+    width: 8px;
+    border-radius: 2px;
+    background: #dddddd;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6.1px;
+}
+
+input[type=range].thredds-range:focus::-webkit-slider-runnable-track {
+    background: #ffffff;
+}
+
+input[type=range].thredds-range::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #ffffff;
+    border-radius: 0px;
+    border: 0.1px solid #a5a5a5;
+}
+
+input[type=range].thredds-range::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px solid #a5a5a5;
+    height: 22px;
+    width: 8px;
+    border-radius: 2px;
+    background: #dddddd;
+    cursor: pointer;
+}
+
+input[type=range].thredds-range::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range].thredds-range::-ms-fill-lower {
+    background: #f2f2f2;
+    border: 0.1px solid #a5a5a5;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range].thredds-range::-ms-fill-upper {
+    background: #ffffff;
+    border: 0.1px solid #a5a5a5;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range].thredds-range::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px solid #a5a5a5;
+    height: 22px;
+    width: 8px;
+    border-radius: 2px;
+    background: #dddddd;
+    cursor: pointer;
+    height: 10px;
+}
+
+input[type=range].thredds-range:focus::-ms-fill-lower {
+    background: #ffffff;
+}
+
+input[type=range].thredds-range:focus::-ms-fill-upper {
+    background: #ffffff;
+}
+
+/*range end*/
+
+/*Scroll css start*/
+
+.custom-thredd-Scroll::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+.custom-thredd-Scroll::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.custom-thredd-Scroll::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+.custom-thredd-Scroll::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+.custom-thredd-Scroll::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+.custom-thredd-Scroll::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+.custom-thredd-Scroll::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+.custom-thredd-Scroll::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+.custom-thredd-Scroll::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/*Scroll css end*/
+/*.timeSliderInnerDiv*/
+
+.timeSliderDiv {
+    height: 70px;
+    overflow-y: auto;
+    /*padding: 10px;*/
+    bottom: 10px;
+    position: absolute;
+    z-index: 14;
+    background: white;
+}
+
+.timeSliderInnerDiv {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: block;
+}
+
+.thredds-data-server-enable-repeat, .thredds-data-server-enable-repeat:hover {
+    background-color: #ddd;
+    color: #094F8E;
+}
+
+.thredds-data-server-data-time, .thredds-data-server-data-time:hover, .thredds-data-server-data-time:active, .thredds-data-server-data-time:visited {
+    min-width: 150px;
+    width: 177px;
+    padding: 5px 10px 0 20px;
+    white-space: nowrap;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    border: solid #cccccc;
+    background-color: #fff;
+    border-width: 1px 1px 1px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    box-sizing: border-box;
+    pointer-events: auto;
+    font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.thredds-data-server-control-rangecontrol {
+    padding: 0px 6px 0px 6px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    width: auto;
+    cursor: auto;
+    float: left;
+    border: solid #cccccc;
+    border-width: 1px 1px 1px 0px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: black;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.thredds-data-server-slider-pic-range {
+    width: 190px !important;
+    opacity: 0.7;
+    padding-bottom: 1px;
+}
+
+.thredds-data-server-slider-pic-range-fps {
+    width: 55px !important;
+    opacity: 0.7;
+    padding-bottom: 1px;
+}
+
+.time-map-title {
+    text-align: center;
+}
+
+
+.timeSliderInnerDiv .speed {
+    width: 49px;
+    height: 22px;
+    padding-top: 5px;
+    padding-right: 5px;
+    line-height: 22px;
+    display: inline-block;
+    float: left;
+    text-align: right;
+    font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.time-map-title {
+    width: 633px;
+    height: 19px    ;
+    /*border: solid #cccccc;*/
+    /*border-width: 1px 1px 0px 1px;*/
+    /*background-color: #fff;*/
+    font-family: "Times New Roman";
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+}
+
+a.timecontrol-date.loading, a.timecontrol-date.loading:hover {
+    background-color: #ffefa4;
+}
+
+.time-threads-repeat-toggle.border-right.looped, .time-threads-repeat-toggle.border-right.looped:hover {
+    background-color: #ddd;
+    color: #094F8E;
+}
+
+
+@-webkit-keyframes icon-rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes icon-rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.thredd-layer-image-div {
+    padding-bottom: 5px;
+}
+
+.time-layer-ledgend-div {
+    width: auto;
+    height: auto;
+    max-height: 409px;
+    overflow-y: auto;
+    padding: 6px 6px 0px 6px;
+    bottom: 10px;
+    position: absolute;
+    z-index: 14;
+    right: 10px;
+    background: white;
+}
+
+/*Bootstrap Start*/
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+    url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+    url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+/*@font-face {*/
+/*    font-family: 'Glyphicons Halflings';*/
+/*    src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot');*/
+/*    src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),*/
+/*    url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2') format('woff2'),*/
+/*    url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'),*/
+/*    url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'),*/
+/*    url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');*/
+/*}*/
+
+/* Add icons you will be using below */
+.timeSliderInnerDiv .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.timeSliderInnerDiv .glyphicon-step-backward:before {
+    content: "\e069";
+}
+
+.timeSliderInnerDiv .glyphicon-play:before {
+    content: "\e072";
+}
+
+.timeSliderInnerDiv .glyphicon-step-forward:before {
+    content: "\e077";
+}
+
+.timeSliderInnerDiv .glyphicon-repeat:before {
+    content: "\e030";
+}
+
+.timeSliderInnerDiv .glyphicon-pause:before {
+    content: "\e073";
+}
+
+.timeSliderInnerDiv .glyphicon-dashboard:before {
+    content: "\e141";
+    position: absolute;
+    font-size: 12px;
+    left: 10px;
+    top: -1px;
+    font-family: "Glyphicons Halflings";
+    display: block;
+}
+
+.timecontrol-date.loading:before {
+    content: "\e031";
+    left: 140px;
+    position: absolute;
+    -webkit-animation: icon-rotation 6s infinite linear;
+    animation: icon-rotation 6s infinite linear;
+}
+
+.timecontrol-date.loading:before {
+    font-family: "Glyphicons Halflings";
+    display: block;
+}
+
+.timeSliderInnerDiv .btn-group, .timeSliderInnerDiv .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.timeSliderInnerDiv .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.timeSliderInnerDiv .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.timeSliderInnerDiv .btn-sm, .timeSliderInnerDiv .btn-group-sm > .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 0px;
+}
+
+.timeSliderInnerDiv .btn:hover, .timeSliderInnerDiv .btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.timeSliderInnerDiv .btn:active, .timeSliderInnerDiv .btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.timeSliderInnerDiv .btn-default:hover, .timeSliderInnerDiv .btn-default:focus, .timeSliderInnerDiv .btn-default:active, .timeSliderInnerDiv .btn-default.active, .timeSliderInnerDiv .open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.timeSliderInnerDiv .btn-default:active, .timeSliderInnerDiv .btn-default.active, .timeSliderInnerDiv .open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+
+.timeSliderInnerDiv .btn-group > .btn, .timeSliderInnerDiv .btn-group-vertical > .btn {
+    position: relative;
+    float: left;
+}
+
+.timeSliderInnerDiv .btn:focus, .timeSliderInnerDiv .btn:active:focus, .timeSliderInnerDiv .btn.active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.timeSliderInnerDiv .btn-group > .btn:hover, .timeSliderInnerDiv .btn-group-vertical > .btn:hover, .timeSliderInnerDiv .btn-group > .btn:focus, .timeSliderInnerDiv .btn-group-vertical > .btn:focus, .timeSliderInnerDiv .btn-group > .btn:active, .timeSliderInnerDiv .btn-group-vertical > .btn:active, .timeSliderInnerDiv .btn-group > .btn.active, .timeSliderInnerDiv .btn-group-vertical > .btn.active {
+    z-index: 2;
+}
+
+.timeSliderInnerDiv .btn-group > .btn:focus, .btn-group-vertical > .btn:focus {
+    outline: 0;
+}
+
+.timeSliderInnerDiv .btn-group > .btn:first-child {
+    margin-left: 0;
+}
+
+.timeSliderInnerDiv .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.timeSliderInnerDiv a {
+    background: 0 0;
+}
+
+.timeSliderInnerDiv .btn {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 0px solid #ccc;
+}
+
+.timeSliderInnerDiv .border-right {
+    border-right: 1px solid #ccc;
+}
+.thredds-range {
+    padding-top: 3px;
+}
+
+
+/*Bootstrap end*/
